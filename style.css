@@ -1,0 +1,109 @@
+:root {
+  --accent:#0d9488;
+  --muted:#6b7280;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+  background:#f8fafc;
+  color:#0f172a;
+}
+header {
+  background:var(--accent);
+  color:#fff;
+  padding:28px 20px;
+}
+.container {
+  max-width:1000px;
+  margin:0 auto;
+  padding:20px;
+}
+.nav {display:flex;justify-content:space-between;align-items:center}
+.brand {font-weight:700;letter-spacing:.6px}
+.cta {
+  background:rgba(255,255,255,0.12);
+  padding:8px 12px;
+  border-radius:8px;
+  text-decoration:none;
+  color:white;
+}
+.hero {display:grid;gap:18px;padding:40px 0}
+.name {font-size:28px;font-weight:800}
+.subtitle {margin-top:6px;color:rgba(255,255,255,.92)}
+.chips {display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+.chip {background:#eef2f7;padding:8px 10px;border-radius:999px;font-size:14px;color:#0f172a}
+.email {margin-top:18px}
+.avatar-card {
+  background:rgba(255,255,255,0.06);
+  padding:18px;
+  border-radius:12px;
+  text-align:center;
+}
+.avatar {
+  width:120px;height:120px;
+  border-radius:50%;
+  background:#fff;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--accent);font-weight:800;font-size:24px;margin:0 auto;
+}
+.hobby {margin-top:10px;color:#fff}
+.card {
+  background:#fff;
+  border-radius:12px;
+  padding:18px;
+  margin-bottom:18px;
+  box-shadow:0 6px 20px rgba(2,6,23,0.06);
+}
+.meta {display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+.skills-list {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.skill .label {font-weight:600;margin-bottom:6px}
+.bar {
+  height:10px;
+  background:#e6eef0;
+  border-radius:999px;
+  overflow:hidden;
+}
+.bar span {
+  display:block;height:100%;
+  background:var(--accent);
+}
+.projects-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.project {
+  height:160px;
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#f8fafc;
+  border:1px dashed #ccc;
+  color:var(--muted);
+}
+form {display:grid;gap:10px}
+input,textarea {
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #e6eef0;
+}
+button {
+  padding:10px 14px;
+  border-radius:10px;
+  border:none;
+  background:var(--accent);
+  color:white;
+  font-weight:700;
+  cursor:pointer;
+}
+.note {font-size:13px;color:var(--muted)}
+footer {text-align:center;padding:18px 0;color:var(--muted)}
+@media(min-width:720px) {
+  .hero {grid-template-columns:1fr 360px;align-items:center}
+  .name {font-size:36px}
+}
